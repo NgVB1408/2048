@@ -11,6 +11,15 @@ h1 {
     margin-top: 20px;
 }
 
+#player-input {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-container {
+    display: none;
+}
+
 #game {
     position: relative;
     margin: 20px auto;
