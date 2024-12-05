@@ -21,10 +21,15 @@ function startGame() {
     const scoreElement = document.getElementById("score");
     const leaderboardList = document.getElementById("leaderboard-list");
 
+    // Sự kiện nhảy trên PC và điện thoại
     document.addEventListener("keydown", (event) => {
         if (event.code === "Space" || event.code === "ArrowUp") {
             if (!jumping) jump(dino);
         }
+    });
+
+    document.addEventListener("touchstart", () => {
+        if (!jumping) jump(dino);
     });
 
     function jump(dino) {
